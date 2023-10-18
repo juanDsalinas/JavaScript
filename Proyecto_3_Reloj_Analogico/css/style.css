@@ -1,0 +1,115 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    background-color:#000;
+}
+
+.reloj {
+    width:350px;
+    height:350px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url("../img/reloj.png");
+    /* abajo podemos poner contain pero cover es mas viejo */
+    background-size:cover;
+    border:.1rem solid  rgb(126, 202, 3);
+    border-radius:50vh;
+    /* sobra interna */
+    /* primero - sobra con el eje X, mas pixeles, mas sobra*/
+    /* segunda - sobra con el eje Y */
+    /* tercer - difuminacion de la sobra */
+    /* cuarto - sobra con respecto al elemento - alrededor*/
+    box-shadow: inset 0px 0px 20px 5px rgb(157, 255, 0);
+}
+
+/* son subelementos, no editables desde la consola o desde el html, es creado desde css
+es como una caja que no ocupa espacio en el dom  */
+.reloj::before {
+    content: '';
+    position: absolute;
+    width:20px;
+    height:20px;
+    background-color:rgb(72, 255, 0);
+    border-radius:50vh;
+    z-index:9999;
+}
+
+/* solo reservamos los espacios */
+.hora {
+    width:140px;
+    height:140px;
+}
+
+.minuto {
+    width:220px;
+    height:220px;
+}
+
+.segundo {
+    width:250px;
+    height:250px;
+}
+
+/* before crea subelementos dentro de elementos */
+
+.hora::before {
+    content: '';
+    position:absolute;
+    width:8px;
+    height:90px;
+    background-color:beige;
+    z-index:10;
+    border-radius:50vh;
+}
+
+.minuto::before {
+    content: '';
+    position:absolute;
+    width:5px;
+    height:130px;
+    background-color:red;
+    z-index:11;
+    border-radius:50vh;
+}
+
+.segundo::before {
+    content: '';
+    position:absolute;
+    width:1.8px;
+    height:150px;
+    background-color:rgb(0, 204, 255);
+    z-index:12;
+    border-radius:50vh;
+}
+
+
+.hora,.minuto,.segundo {
+    display:flex;
+    justify-content:center;
+    position:absolute;
+    border-radius:50vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
