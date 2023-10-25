@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    align-items:center;
+    justify-content:center;
+    display: flex;
+    min-height:100vh;
+}
+
+.esqueletoOff {
+    width:550px;
+    height:600px;
+    background-color:orangered;
+    display:flex;
+    align-items:end;
+    justify-content:center;
+    background-image: url("img/esqueleto2.png");
+
+}
+
+.on{
+    background-image: url("img/esqueleto1.gif");
+}
+
+.esqueletoOnOff{
+    width:100px;
+    height:50px;
+    background-color:orangered;
+    border-radius:1vh;
+    border: .2rem solid orange;
+    position:fixed;
+    color:#fff;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.esqueletoOnOff:hover{
+    cursor:pointer;
+    background-color: rgb(89, 36, 19);
+}
+
