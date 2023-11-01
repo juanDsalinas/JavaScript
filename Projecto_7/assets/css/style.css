@@ -30,7 +30,7 @@ body {
 }
 
 .pantalla .cronometro span {
-    width:80px;
+    width:70px;
     text-align:center;
     font-size:45px;
     font-weight:550;
@@ -43,7 +43,7 @@ body {
 }
 
 .cronometro span.separador-mili {
-    width:5px;
+    width:10px;
 }
 
 .cronometro span.separador-mili,
