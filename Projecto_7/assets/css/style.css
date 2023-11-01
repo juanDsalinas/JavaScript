@@ -1,0 +1,77 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(241, 27, 27);
+}
+
+.pantalla {
+    user-select:none;
+}
+
+.pantalla .cronometro {
+    height:100px;
+    background-color:lightcoral;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:2rem;
+    box-shadow:0 0 8px 5px rgb(207, 102, 102);
+    border:none;
+}
+
+.pantalla .cronometro span {
+    width:80px;
+    text-align:center;
+    font-size:45px;
+    font-weight:550;
+    color:lightskyblue;
+}
+
+.cronometro span.separador {
+    width:10px;
+    text-align:center;
+}
+
+.cronometro span.separador-mili {
+    width:5px;
+}
+
+.cronometro span.separador-mili,
+.cronometro span.milisegundo {
+    color:purple;
+}
+
+.pantalla .botones {
+    text-align:center;
+    margin-top:30px;
+}
+
+.botones button {
+    padding:6px 16px;
+    outline:none;
+    border:none;
+    margin:0px 10px;
+    color:darkblue;
+    background-color:#ccc;
+    font-size:20px;
+    font-weight:500;
+    border-radius:.9rem;
+    cursor: pointer;
+    box-shadow: 3px 4px 3px 0 #e883a0;
+}
+
+.botones button.on {
+    /* inactivar el boton al darle click */
+    pointer-events:none;
+    opacity:.7;
+}
