@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color:rgb(83, 200, 220);
+    width:100vw;
+    height:100vh;
+    justify-content:space-between;
+    align-items:center;
+    display:flex;
+    /* padding:0 200px; */
+}
+
+/* contador */
+.main {
+    /* background-color:green; */
+    padding-left:250px;
+}
+
+.texto {
+    text-align:center;
+    padding:40px;
+    color:red;
+    font-size:25px;
+}
+
+.cuenta{
+    width:500px;
+    height:100px;
+    /* background-color:greenyellow; */
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.numbers{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.numbers > div {
+    border: 1px solid #fff;
+    box-shadow:inset 0px 0px 2px 1px white;
+    border-radius:50vh;
+    padding:10px 20px;
+    color:#fff;
+}
+
+.letter {
+    display:flex;
+    align-items:center;
+    gap:40px;
+    margin-top:10px;
+}
+
+.letter > div {
+    /* border: 5px solid red; */
+    padding:10px;
+    color:#fff;
+    padding:0px 20px;
+}
+
+/* Buttons */
+.bitin {
+    display:flex;
+    margin-left:190px;
+    padding:10px;
+}
+
+.iniciar {
+    margin: 0 2px;
+    /* background-color:red; */
+}
+
+.iniciar > button {
+    border-radius:5px;
+    padding:8px;
+    background-color:red;
+    color:#fff;
+    border-radius:50vh;
+}
+
+.iniciar > button:hover {
+    background-color:rgb(192, 56, 56);
+}
+
+.pause {
+    margin: 0 2px;
+    /* background-color:black; */
+}
+
+.pause > button {
+    border-radius:5px;
+    padding:8px;
+    background-color:red;
+    border-radius:50vh;
+    color:#fff;
+}
+
+.pause > button:hover {
+    background-color:rgb(192, 56, 56);
+}
+
+.on{
+    pointer-events:none;
+    opacity:.5;
+}
+
+.papa {
+    width:500px;
+    height:500px;
+    background-image: url("../img/papaNoel___35654be3ba224a5___.png");
+    padding-left:700px;
+}
+
+.dance {
+    background-image: url("../img/papaNoel___61654be3b908afe___.gif");
+}
